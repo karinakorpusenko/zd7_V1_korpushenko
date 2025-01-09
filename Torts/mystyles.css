@@ -1,0 +1,63 @@
+﻿^contentpage {
+    background-color: #ffcccb;
+}
+
+mainstack {
+    margin: 15;
+    padding: 15;
+}
+
+label {
+    color: #343a40; /* Darker text for better readability */
+}
+
+#header {
+    font-size: 32;
+    font-weight: bold;
+    color: #dc3545; /* Red color for a cake theme */
+    text-align: center;
+    margin-bottom: 50;
+}
+
+probel {
+    margin: 30;
+}
+
+entry {
+    background-color: #ffffff; /* White background for entries */
+    border: thin solid #343a40; /* Dark border for visibility */
+}
+
+button {
+    margin-top: 20;
+    background: #dc3545; /* Red background for buttons */
+    color: white;
+    font-size: 20;
+    text-align: center;
+    text-transform: uppercase; /* Uppercase text for buttons */
+}
+
+ll {
+    margin-top: 15;
+}
+
+checkbox {
+    color: #343a40; /* Dark text for checkboxes */
+}
+
+remember {
+    text-decoration-color: #343a40; /* Dark text for remember */
+}
+
+stacklayout label {
+    font-family: 'Verdana', sans-serif; /* Clear font for labels */
+}
+
+forgot {
+    text-decoration-color: #343a40; /* Dark text for forgot */
+    align-content: end;
+}
+
+body123 {
+    vertical-align: central;
+}

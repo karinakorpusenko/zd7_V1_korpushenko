@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Torts.Page2">
+    <ContentPage.Resources>
+        <StyleSheet Source="mystyles.css">
+        </StyleSheet>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Padding="0, 15, 0, 0">
+                <Label Padding="0, 0, 0, 10"
+                   Text="Информация по тортам - кулинария (заказ и покупка тортов)"
+                FontAttributes="Italic"
+                FontSize="20"
+                TextColor="Red" />
+                <Image x:Name="Imagee" Aspect="AspectFill" HeightRequest="180" />
+
+                <Label
+    x:Name="Name"
+    Text="{Binding Name}" 
+    FontSize="20" />
+
+                <Label                 
+    x:Name="Country"
+    Text="{Binding Country}" />
+
+                <Label                 
+    x:Name="Category"
+    Text="{Binding Category}" />
+
+                <Label                 
+    x:Name="Cost"
+    Text="{Binding Cost}" />
+
+                <Label                 
+    x:Name="Unit"
+    Text="{Binding Unit}" />
+
+                <Label                 
+    x:Name="Fats"
+    Text="{Binding Fats}" />
+
+                <Label                 
+    x:Name="Proteins"
+    Text="{Binding Proteins}" />
+
+                <Label                 
+    x:Name="Carbohydrates"
+    Text="{Binding Carbohydrates}" />
+
+                <Label                 
+    x:Name="Vitamins"
+    Text="{Binding Vitamins}" />
+
+                <Label                 
+    x:Name="Supplier"
+    Text="{Binding Supplier}" />
+
+                <Label                 
+    x:Name="Recipe"
+    Text="{Binding Recipe}" />
+
+                <Label                 
+    x:Name="Quantity"
+    Text="{Binding Quantity}" />
+
+                <Label Text="Вес (кг):" />
+                <Entry x:Name="Ves" Keyboard="Numeric" Background="#ffcccb" TextColor="#e75480"/>
+                <Picker x:Name="ComplexityPicker" Title="Выберите сложность"    TextColor="#e75480" >
+                    <Picker.Items>
+                        <x:String>Сложная мастика с фигурами людей</x:String>
+                        <x:String>Дополнительное украшение с помощью крема</x:String>
+                        <x:String>Наличие надписи</x:String>
+                        <x:String>Отсутсвует</x:String>
+                    </Picker.Items>
+                </Picker>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="Выбор торта" Clicked="Back" FontSize="14"/>
+                    <Button Text="Расчет стоимости торта" Clicked="OnCalculateCostClicked" FontSize="14"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
